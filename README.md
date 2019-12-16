@@ -8,13 +8,13 @@
 
 > Client Side
 
-- Home Feed With All The Facts
+- Home Feed with all the existing facts
 
-- User Feed With All The User's Facts
+- User Feed with all the existing facts writen by the authorized user
 
-- User Can Post Facts To The Global Feed
+- User can post new facts to the global feed and share his ideas with the world
 
-- User Can Delete His Own Facts 
+- User can delete his own facts 
 
 > Server Side
 
