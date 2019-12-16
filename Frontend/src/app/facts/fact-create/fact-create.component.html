@@ -1,0 +1,21 @@
+<mat-card>
+  <form (submit)='onAddFact(factForm)' #factForm='ngForm'>
+      <mat-form-field>
+        <input
+          matInput
+          rows='4'
+          name='msgText'
+          ngModel
+          required
+          minlength='3'
+          placeholder='Add a new Fact'
+          #msgText='ngModel'>
+      </mat-form-field>
+      <button
+        mat-raised-button
+        color="accent"
+        type='submit'>
+        Save Fact
+      </button>
+  </form>
+</mat-card>

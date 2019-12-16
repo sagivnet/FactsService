@@ -1,0 +1,8 @@
+<mat-card class="card">
+    <mat-toolbar class='toolbar'>
+        <button (click)="isLogin=true;" mat-button color='primary' class="btn" id="loginbtn">Login</button>
+        <button (click)="isLogin=false;" mat-button color='primary' class="btn" id="regbtn">Register</button>
+    </mat-toolbar>
+  <app-auth-login [apiService]='apiService' *ngIf='isLogin'></app-auth-login>
+  <app-auth-register [apiService]='apiService' *ngIf='!isLogin'></app-auth-register>
+</mat-card>

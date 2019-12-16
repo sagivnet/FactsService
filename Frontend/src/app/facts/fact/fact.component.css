@@ -1,0 +1,54 @@
+body {
+  background-color: #100e17;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.facts {
+  min-width: 400px;
+  max-height: 300px;
+  justify-content: center;
+  margin: 2em auto;
+}
+
+.fact {
+  display: flex;
+  height: 250px;
+  width: 85%;
+  background-color: #5d5a61;
+  border-radius: 10px;
+  box-shadow: -1rem 0 1rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  /*position: relative;
+  left: 0px;*/
+}
+
+.fact:not(:first-child) {
+    margin-left: -50px;
+}
+
+.fact:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.fact:hover ~ .fact {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.text {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.mtBtn {
+  border: solid 1px;
+  /*border-color: blue;
+  background-color: lightblue;*/
+  top: 80%;
+}

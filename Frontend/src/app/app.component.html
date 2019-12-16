@@ -1,0 +1,6 @@
+<app-header></app-header>
+<main>
+
+    <app-auth-header [apiService]='apiService' *ngIf="!apiService.isLoggedIn()"></app-auth-header>
+    <app-facts-header [factsService]='factsService'  *ngIf="apiService.isLoggedIn()"></app-facts-header>
+</main>

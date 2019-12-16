@@ -1,0 +1,45 @@
+
+
+<form (submit)='handleRegister(factForm)' #factForm='ngForm' class="register-form">
+    <mat-form-field class="register-full-width">
+        <input matInput
+          rows='4'
+          name='email'
+          ngModel
+          required
+          minlength='4'
+          placeholder='Email'
+          type='email'
+          #email='ngModel'>
+    </mat-form-field>
+    <mat-form-field class="register-full-width">
+        <input matInput
+        rows='4'
+        name='name'
+        ngModel
+        required
+        minlength='4'
+        placeholder='Name'
+        type='text'
+        #password='ngModel'>
+    </mat-form-field>
+    <mat-form-field class="register-full-width">
+        <input matInput
+        rows='4'
+        name='password'
+        ngModel
+        required
+        minlength='4'
+        placeholder='Password'
+        type='password'
+        #password='ngModel'>
+    </mat-form-field>
+    <button
+        mat-raised-button
+        color="primary"
+        type='submit'>
+        Register
+      </button>
+  </form>
+
+

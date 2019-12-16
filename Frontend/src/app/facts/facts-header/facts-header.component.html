@@ -1,0 +1,13 @@
+<mat-card class="card">
+
+  <app-fact-create [factsService]='factsService'></app-fact-create>
+
+  <mat-toolbar class='toolbar'>
+    <button (click)="displayAllFacts()" mat-button color='primary' class="btn" id="allbtn">All Facts</button>
+    <button (click)="displayMyFacts()" mat-button class="btn" id="mybtn">My Facts</button>
+  </mat-toolbar>
+
+  <app-all-facts [isAllFacts]='isAllFacts' [factsService]='factsService' *ngIf='isAllFacts'></app-all-facts>
+  <app-my-facts [isAllFacts]='isAllFacts' [factsService]='factsService' *ngIf='!isAllFacts'></app-my-facts>
+
+</mat-card>

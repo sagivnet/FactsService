@@ -1,0 +1,12 @@
+.card {
+  height: 350px;
+  margin-bottom: 2%;
+}
+
+.toolbar {
+  margin-bottom: 2%;
+}
+
+.btn:focus {
+  background-color: lightblue;
+}
