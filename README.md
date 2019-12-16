@@ -2,7 +2,7 @@
 
 - Share Some Facts With The World!
 
-- An End-to-end application for managing Facts feed application using online database with users authentication service
+- An End-to-end project to manage Facts feed application using alot of cool features
 
 ## Features
 
@@ -93,8 +93,6 @@ $ ng serve
 # Useage 
 
 > Go to: http://localhost:4200
-
-
 
 ## Documentation 
 
