@@ -100,7 +100,7 @@ $ ng serve
 
 ## Documentation 
 
-- An End-to-end project implements a RESTful api following the MEAN design pattern 
+- An End-to-end project implements a RESTful api following the MEAN scheme pattern 
 
 > MongoDB - as a database
 
