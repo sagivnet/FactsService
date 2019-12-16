@@ -1,28 +1,28 @@
 # Facts
 
-- An End-to-end application for managing a Facts feed using online database with users authentication 
+- Share Some Facts With The World!
+
+- An End-to-end application for managing Facts feed application using online database with users authentication service
 
 ## Features
-
-- Authentication mechanism
-
-- Data verification mechanism
 
 - Home feed to see all the existing facts
 
 - User's personal feed to see all the facts that uploaded by him
 
-- User can add a new fact to the database
+- Online Remote Database
 
-- User can delete each of his facts from the database
+- Authentication 
 
-## Examples
+- Password Encryption 
 
-> Authentication
+- Data Verification 
 
-<img src="https://i.ibb.co/JtZbqZX/Register.png" title="Register">
+- User can add facts to the database
 
-<img src="https://i.ibb.co/QKH6mC9/Loginpng.png" title="Login">
+- User can delete his facts from the database
+
+## Screenshots
 
 > Home
 
@@ -32,13 +32,19 @@
 
 <img src="https://i.ibb.co/1RhVfD7/MyFacts.png" title="MyFacts">
 
+> Authentication
+
+<img src="https://i.ibb.co/JtZbqZX/Register.png" title="Register">
+
+<img src="https://i.ibb.co/QKH6mC9/Loginpng.png" title="Login">
+
+
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/sagivnet/FactsService`
-
+- To clone this repository
 
 ```shell
-$ git clone --recurse-submodules -j8 https://github.com/sagivnet/FactsService
+$ git clone https://github.com/sagivnet/FactsService
 $ cd FactsService
 ```
 
@@ -48,7 +54,10 @@ $ cd FactsService
 
 > Backend setup
 
-- Important: You need to have a valid .env file in folder /Backend in order to connect to the database!
+- Important: You need to have a valid .env file in folder /Backend Contatins:
+
+> DB_URI        =   <MongoDB Credentials>
+> TOKEN_SECRET  =   <A random string which is used as a private key for passwords encryption>
 
 ```shell
 $ cd Backend
@@ -61,7 +70,7 @@ $ npm install
 $ npm start
 ```
 
-> Now server is running on http://localhost:3000
+> Now the server is running on http://localhost:3000
 
 - Frontend
 
