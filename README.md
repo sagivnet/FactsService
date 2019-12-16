@@ -10,13 +10,13 @@
 
 - User's personal feed containing all the existing facts that had been writen by the user
 
-- Online Remote Database
+- Online Remote Database integration
 
-- Authentication 
+- Authentication service
 
-- Password Encryption 
+- Password Encryption service
 
-- Data Verification 
+- Data Verification service
 
 - User can add facts to the database
 
