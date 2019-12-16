@@ -52,7 +52,7 @@ $ cd FactsService
 
 > Backend setup
 
-- Configurations: You need to have a file named: .env in folder Backend Contatins:
+- Configurations: You need to have a file named: .env in the Backend folder Contatins:
 
 - DB_URI        =  Atlas MongoDB Connection Credentials 
 - TOKEN_SECRET  =  A random string which is used as a Private Key for passwords RSA encryption 
