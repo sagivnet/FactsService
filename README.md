@@ -6,9 +6,9 @@
 
 ## Features
 
-- Home feed to see all the existing facts
+- Home feed containing all the existing facts
 
-- User's personal feed to see all the facts that uploaded by him
+- User's personal feed containing all the existing facts that had been writen by the user
 
 - Online Remote Database
 
@@ -40,8 +40,6 @@
 
 
 ### Clone
-
-- To clone this repository
 
 ```shell
 $ git clone https://github.com/sagivnet/FactsService
