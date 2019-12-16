@@ -96,7 +96,7 @@ $ ng serve
 ---
 # Useage 
 
-> After setup go to: http://localhost:4200
+> After setup, go to: http://localhost:4200
 
 ## Documentation 
 
