@@ -20,7 +20,7 @@
 
 - User can post facts to the global feed
 
-- User can delete his facts from the feed
+- User can delete his own facts 
 
 ## Screenshots
 
