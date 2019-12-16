@@ -54,8 +54,8 @@ $ cd FactsService
 
 - Important: You need to have a valid .env file in folder /Backend Contatins:
 
-> DB_URI        =  /< Atlas MongoDB Connection Credentials />
-> TOKEN_SECRET  =  /< A random string which is used as a Private Key for passwords RSA encryption />
+> DB_URI        =  Atlas MongoDB Connection Credentials 
+> TOKEN_SECRET  =  A random string which is used as a Private Key for passwords RSA encryption 
 
 ```shell
 $ cd Backend
