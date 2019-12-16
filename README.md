@@ -2,7 +2,7 @@
 
 - Share Some Facts With The World!
 
-- A Facts feed Manager End-to-end Aplication
+- A Facts Feed Manager End-to-end Aplication
 
 ## Features
 
