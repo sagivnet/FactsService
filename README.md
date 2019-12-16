@@ -2,9 +2,11 @@
 
 - Share Some Facts With The World!
 
-- An End-to-end project to manage Facts feed application using alot of cool features
+- A Facts feed Manager End-to-end Aplication
 
 ## Features
+
+> Client Side
 
 - Home feed containing all the existing facts
 
@@ -13,6 +15,8 @@
 - User can post facts to the global feed
 
 - User can delete his own facts 
+
+> Server Side
 
 - Online Remote Database integration
 
