@@ -10,6 +10,10 @@
 
 - User's personal feed containing all the existing facts that had been writen by the user
 
+- User can post facts to the global feed
+
+- User can delete his own facts 
+
 - Online Remote Database integration
 
 - Authentication service
@@ -18,9 +22,6 @@
 
 - Data Verification service
 
-- User can post facts to the global feed
-
-- User can delete his own facts 
 
 ## Screenshots
 
