@@ -18,9 +18,9 @@
 
 - Data Verification service
 
-- User can add facts to the database
+- User can post facts to the global feed
 
-- User can delete his facts from the database
+- User can delete his facts from the feed
 
 ## Screenshots
 
