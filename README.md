@@ -2,29 +2,29 @@
 
 - Share Some Facts With The World!
 
-- A Facts Feed Manager End-to-end Aplication
+- A Facts Feed Manager End-to-end Application
 
 ## Features
 
 > Client Side
 
-- Home feed containing all the existing facts
+- Home Feed With All The Facts
 
-- User's personal feed containing all the existing facts that had been writen by the user
+- User Feed With All The User's Facts
 
-- User can post facts to the global feed
+- User Can Post Facts To The Global Feed
 
-- User can delete his own facts 
+- User Can Delete His Own Facts 
 
 > Server Side
 
-- Online Remote Database integration
+- Online Remote Database Integration
 
-- Authentication service
+- Authentication Service
 
-- Password Encryption service
+- Password Encryption Service
 
-- Data Verification service
+- Data Verification Service
 
 
 ## Screenshots
@@ -57,10 +57,10 @@ $ cd FactsService
 
 > Backend setup
 
-- Configurations: You need to have a file named: .env in the Backend folder Contatins:
+- Configurations: You need to have a file named: .env in folder: Backend Contatins:
 
-- DB_URI        =  Atlas MongoDB Connection Credentials 
-- TOKEN_SECRET  =  A random string which is used as a Private Key for passwords RSA encryption 
+- DB_URI        =  An Atlas MongoDB Connection Credentials URI
+- TOKEN_SECRET  =  A Random String Which Used As A Private Key For Bycryptjs Passwords RSA encryption System 
 
 
 ```shell
