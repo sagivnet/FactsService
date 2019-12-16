@@ -90,6 +90,9 @@ $ ng serve
 > Now a friendly user interface is running on http://localhost:4200
 
 ---
+# Useage 
+
+> Go to: http://localhost:4200
 
 ## Documentation 
 
