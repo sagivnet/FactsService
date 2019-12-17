@@ -44,6 +44,8 @@
 <img src="https://i.ibb.co/QKH6mC9/Loginpng.png" title="Login">
 
 
+### Let's get started
+
 ### Clone
 
 ```shell
@@ -55,13 +57,13 @@ $ cd FactsService
 
 - Backend 
 
+
+> Configurations: You need to have a file named: .env in folder: Backend Contatins:
+
+- DB_URI        =  An Atlas MongoDB connection credentials URI
+- TOKEN_SECRET  =  A random string which is used as a private key for Bycryptjs passwords RSA encryption system 
+
 > Backend setup
-
-- Configurations: You need to have a file named: .env in folder: Backend Contatins:
-
-- DB_URI        =  An Atlas MongoDB Connection Credentials URI
-- TOKEN_SECRET  =  A Random String Which Used As A Private Key For Bycryptjs Passwords RSA encryption System 
-
 
 ```shell
 $ cd Backend
