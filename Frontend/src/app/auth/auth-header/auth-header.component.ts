@@ -8,10 +8,10 @@ import { ApiService } from 'src/app/services/api.service';
 })
 export class AuthHeaderComponent {
 
-  @Input() private apiService: ApiService;
-  private isLogin = true;
+  @Input() apiService: ApiService;
+  isLogin = true;
 
-  private updateIsLogin(state: boolean) {
+  updateIsLogin(state: boolean) {
     this.isLogin = state;
   }
 
