@@ -4,5 +4,5 @@
         <button (click)="isLogin=false;" mat-button color='primary' class="btn" id="regbtn">Register</button>
     </mat-toolbar>
   <app-auth-login [apiService]='apiService' *ngIf='isLogin'></app-auth-login>
-  <app-auth-register [apiService]='apiService' *ngIf='!isLogin'></app-auth-register>
+  <app-auth-register (updateIsLogin)='updateIsLogin($event)' [apiService]='apiService' *ngIf='!isLogin'></app-auth-register>
 </mat-card>

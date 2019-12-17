@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { ApiService } from 'src/app/services/api.service';
 
 @Component({
@@ -7,9 +7,14 @@ import { ApiService } from 'src/app/services/api.service';
   styleUrls: ['./auth-header.component.css']
 })
 export class AuthHeaderComponent {
-  @Input() apiService: ApiService;
-  token = '';
-  isLogin = true;
+
+  @Input() private apiService: ApiService;
+  private isLogin = true;
+
+  private updateIsLogin(state: boolean) {
+    this.isLogin = state;
+  }
 
   constructor() {}
 }
+

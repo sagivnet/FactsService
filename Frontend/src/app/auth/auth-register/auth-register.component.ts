@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ApiService } from 'src/app/services/api.service';
 
@@ -7,9 +7,10 @@ import { ApiService } from 'src/app/services/api.service';
   templateUrl: './auth-register.component.html',
   styleUrls: ['./auth-register.component.css']
 })
-export class AuthRegisterComponent  {
+export class AuthRegisterComponent {
 
   @Input() apiService: ApiService;
+  @Output() updateIsLogin = new EventEmitter<boolean>();
 
   constructor() {}
 
@@ -20,7 +21,8 @@ export class AuthRegisterComponent  {
     const body = {email: form.value.email, name: form.value.name, password: form.value.password};
     this.apiService.post('/user/register', body).toPromise()
       .then(ack => {
-        console.log(ack); // TODO: update isLogin
+        console.log(ack.message); // TODO: update isLogin
+        this.updateIsLogin.emit(true);
       })
       .catch(err => {
         console.log(err.error);
