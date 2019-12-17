@@ -13,7 +13,6 @@ export class FactsHeaderComponent  {
 
   @Input()  factsService: FactsService;
   @Output() isAllFactsListener: Observable<boolean> = this.isAllFactsUpdate.asObservable();
-  // @Output() isAllFacts = true;
 
   constructor() {}
 
