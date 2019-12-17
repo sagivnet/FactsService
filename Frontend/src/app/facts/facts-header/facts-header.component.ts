@@ -1,4 +1,4 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, Input, Output, OnInit } from '@angular/core';
 import { FactsService } from 'src/app/services/facts.service';
 import { Subject, Observable } from 'rxjs';
 
@@ -7,7 +7,7 @@ import { Subject, Observable } from 'rxjs';
   templateUrl: './facts-header.component.html',
   styleUrls: ['./facts-header.component.css']
 })
-export class FactsHeaderComponent  {
+export class FactsHeaderComponent implements OnInit  {
 
   private isAllFactsUpdate = new /*event emitter*/Subject/*passing*/<boolean>();
 
@@ -15,6 +15,10 @@ export class FactsHeaderComponent  {
   @Output() isAllFactsListener: Observable<boolean> = this.isAllFactsUpdate.asObservable();
 
   constructor() {}
+
+  ngOnInit() {
+    this.isAllFactsUpdate.next(true);
+  }
 
   displayAllFacts() {
     this.isAllFactsUpdate.next(true);

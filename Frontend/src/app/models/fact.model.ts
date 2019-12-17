@@ -1,5 +1,6 @@
+import { User } from './User.model';
 export interface Fact {
-  //username: string;
+  _id: String;
+  user: User;
   text: string;
-  _id: string;
 }

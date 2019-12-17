@@ -1,7 +1,7 @@
 import { FactsService } from '../../services/facts.service';
 import { Component, OnInit, Input, OnDestroy, Output } from '@angular/core';
 import { ChangeDetectorRef } from '@angular/core';
-import { Fact } from 'src/app/models/fact.model';
+import { Fact } from 'src/app/models/Fact.model';
 import { Subscription, Observable } from 'rxjs';
 
 @Component({
@@ -23,6 +23,7 @@ export class FactsListComponent implements OnInit, OnDestroy {
   constructor(private cdRef: ChangeDetectorRef) {}
 
   ngOnInit() {
+    this.isAllFacts = true;
     if (this.isAllFacts) {
       this.facts = this.factsService.getFacts();
     } else {
@@ -39,12 +40,14 @@ export class FactsListComponent implements OnInit, OnDestroy {
         } else {
           this.facts = this.factsService.getUserFacts();
         }
+        this.cdRef.detectChanges();
       });
 
     this.newFactsSubscription = this.factsService.getFactUpdateListener()
     .subscribe(
       (facts: Fact[]) => {/*called when emitted*/ /*TODO: BUG */
         this.facts = facts;
+        this.cdRef.detectChanges();
       });
 
     this.cdRef.detectChanges();

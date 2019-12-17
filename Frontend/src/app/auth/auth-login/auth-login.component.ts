@@ -8,7 +8,9 @@ import { ApiService } from 'src/app/services/api.service';
   styleUrls: ['./auth-login.component.css']
 })
 export class AuthLoginComponent {
+
   token = '';
+
   @Input() apiService: ApiService;
 
   constructor() {}
@@ -19,13 +21,15 @@ export class AuthLoginComponent {
     }
     const body = {email: form.value.email, password: form.value.password};
     this.apiService.post('/user/login', body).toPromise()
-      .then(data => {
-        this.apiService.setToken(data.message); /*for identification in the server*/
-        console.log('Login is complete'); // VERBOSE
-      })
-      .catch(err => {
-        console.log(err.error);
-      });
+    .then(user => {
+      if (user.name) {
+        this.apiService.logIn(user);
+      } else {
+        console.log('Password incorrect');
+      }
+    })
+    .catch(err => {
+    });
     form.reset();
   }
 }

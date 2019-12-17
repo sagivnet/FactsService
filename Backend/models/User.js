@@ -21,6 +21,11 @@ const UserScheme = mongoose.Schema({
     date: {
         type: Date,
         default: Date.now
+    },
+    token: {
+        type: String,
+        default: ''
     }
 });
+exports.UserScheme = UserScheme;
 module.exports = mongoose.model('User', UserScheme)

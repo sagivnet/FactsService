@@ -2,7 +2,7 @@
 
 - Share Some Facts With The World!
 
-- A Facts Feed Manager End-to-end Application
+- A Facts Feed Manager End-to-end Application using Anguler & Node.js as development environments
 
 ## Features
 

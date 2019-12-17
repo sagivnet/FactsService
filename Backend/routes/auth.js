@@ -75,7 +75,8 @@ router.post('/login', (req, res) => {
                     }
                     // Create and assign a token
                     const token = jwt.sign({_id: user.id}, process.env.TOKEN_SECRET)
-                    res.status(200).header('auth-token', token).json({message:token})
+                    user.token = token;
+                    res.status(200).header('auth-token', token).json(user)
                     console.log('New user has loged in') 
                 })
                 .catch(err => {

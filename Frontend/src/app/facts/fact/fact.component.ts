@@ -1,6 +1,6 @@
 import { FactsService } from 'src/app/services/facts.service';
 import { Component , Input } from '@angular/core';
-import { Fact } from 'src/app/models/fact.model';
+import { Fact } from 'src/app/models/Fact.model';
 
 @Component({
   selector: 'app-fact',
@@ -17,5 +17,4 @@ export class FactComponent {
   onDelete() {
     this.factsService.deleteFact(this.fact);
   }
-
 }

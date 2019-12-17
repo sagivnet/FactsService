@@ -4,6 +4,30 @@ const Fact = require('../models/Fact')
 const mongoose = require('mongoose')
 const verify = require('./verifyToken')
 const { factValidation } = require('../validation')
+const User = require('../models/User')
+
+
+function delayedFunc(fact) {
+    return User.findOne({ _id: fact.user }, function(error, user) {
+        if (error) {
+            console.log("Find user error:" + error);
+        } else {
+            user._id = '****';
+            user.password = '****';
+            user.email = '****';
+            user.token = '****';
+            fact.user = user;
+        }
+    });
+}
+
+async function joinUsersToFactsAndSend(facts, res) {
+    // map array to promises
+    const promises = facts.map(delayedFunc);
+    // wait until all promises are resolved
+    await Promise.all(promises);
+    res.status(200).json(facts);
+  }
 
 //  BASE ROUTE: /facts
 //  GET
@@ -11,9 +35,8 @@ const { factValidation } = require('../validation')
 router.get('/', (req, res) => {
     Fact.find()
         .exec()
-        .then(docs => {
-            
-            res.status(200).json(docs)
+        .then(facts => {
+            joinUsersToFactsAndSend(facts, res);
         })
         .catch(err => {
             return res.status(500).json({
@@ -22,11 +45,11 @@ router.get('/', (req, res) => {
         })
 })
 //      GET: User's facts
-router.get('/user',verify, (req, res) => {
-    Fact.find({user: req.user._id})
+router.get('/user', verify, (req, res) => {
+    Fact.find({user: req.user})
         .exec()
-        .then(docs => {
-            res.status(200).json(docs)
+        .then(facts => {
+            res.status(200).json(facts)
         })
         .catch(err => {
             return res.status(500).json({
@@ -36,13 +59,16 @@ router.get('/user',verify, (req, res) => {
 })
 
 //      GET: Specific fact
+//      TODO: Not supported by frotend atm
 router.get('/:factId', (req, res, next) => {
     const id = req.params.factId
     Fact.findById(id)
     .exec()
     .then(result => {
         if (result){
-            res.status(200).json(result)
+            //result = joinUsersToFacts([result]);
+            // res.status(200).json(result)
+            joinUsersToFactsAndSend([result], res);
         }
         else {
             res.status(404).json({error: 'Fact ID is not valid!'})

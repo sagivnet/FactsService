@@ -3,12 +3,14 @@ import {  HttpClient , HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
+import { User } from '../models/User.model';
 
 @Injectable({providedIn: 'root'})
 export class ApiService {
 
-  private loggedIn = false;
-  private token = '';
+  user: User;
+
+  private loggedIn = false; // For Display
 
   constructor(private http: HttpClient) {}
 
@@ -18,23 +20,24 @@ export class ApiService {
     return [];
   }
 
-  public isLoggedIn() {
+  setIsLoggedIn(state: boolean) {
+    this.loggedIn = state;
+  }
+
+  isLoggedIn() {
     return this.loggedIn;
   }
 
-  public setIsLoggedIn(state: boolean) {
-     this.loggedIn = state;
+  logIn(user: User) {
+    this.user = user;
+    this.loggedIn = true;
   }
 
   createAuthHeaders(): HttpHeaders {
+    const token = this.user ? this.user.token : '';
     return new HttpHeaders()
       .set('content-type', 'application/json')
-      .set('auth-token', this.token);
-  }
-
-  setToken(token: string) {
-    this.token = token;
-    this.setIsLoggedIn(true);
+      .set('auth-token', token);
   }
 
   get(path: string): Observable<any> {

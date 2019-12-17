@@ -1,3 +1,4 @@
+import { ApiService } from 'src/app/services/api.service';
 import { FactsService } from '../../services/facts.service';
 import { Component , Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
@@ -15,7 +16,7 @@ export class FactCreateComponent {
     if (form.invalid) {
       return;
     }
-    this.factsService.addFact({text: form.value.msgText, _id: ""}); //TODO:
+    this.factsService.addFact({text: form.value.msgText, _id: '', user: this.factsService.apiService.user}); //TODO:
     form.reset();
   }
 }

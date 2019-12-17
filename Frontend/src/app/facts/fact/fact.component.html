@@ -1,8 +1,10 @@
 <div class="facts">
     <mat-card class='fact'>
         <p class="text">{{ fact.text }}</p>
+        <p class="text">{{ fact.user.name }}</p>
+
         <mat-card-actions>
-            <button  *ngIf='!isAllFacts' id="delete" class="btn mtBtn" mat-button (click)="onDelete()">DELETE</button>
+            <button  *ngIf='!isAllFacts' id="delete" class="btn mtBtn" mat-raised-button color='warn' (click)="onDelete()">DELETE</button>
           </mat-card-actions>
     </mat-card>
 </div>

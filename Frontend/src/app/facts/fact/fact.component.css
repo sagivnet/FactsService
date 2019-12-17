@@ -14,7 +14,7 @@ body {
   display: flex;
   height: 250px;
   width: 85%;
-  background-color: #5d5a61;
+  background-color: #5b7fb4;
   border-radius: 10px;
   box-shadow: -1rem 0 1rem #000;
 /*   margin-left: -50px; */
@@ -48,7 +48,7 @@ body {
 
 .mtBtn {
   border: solid 1px;
-  /*border-color: blue;
-  background-color: lightblue;*/
+  border-color: rgb(255, 0, 0);
+  /* background-color: white; */
   top: 80%;
 }

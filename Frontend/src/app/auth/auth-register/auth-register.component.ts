@@ -21,11 +21,10 @@ export class AuthRegisterComponent {
     const body = {email: form.value.email, name: form.value.name, password: form.value.password};
     this.apiService.post('/user/register', body).toPromise()
       .then(ack => {
-        console.log(ack.message); // TODO: update isLogin
         this.updateIsLogin.emit(true);
       })
       .catch(err => {
-        console.log(err.error);
+        console.log('err:' + err.error);
       });
 
     form.reset();
