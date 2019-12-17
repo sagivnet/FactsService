@@ -20,9 +20,8 @@ import { AuthHeaderComponent } from './auth/auth-header/auth-header.component';
 import { AuthRegisterComponent } from './auth/auth-register/auth-register.component';
 import { AuthLoginComponent } from './auth/auth-login/auth-login.component';
 import { FactsHeaderComponent } from './facts/facts-header/facts-header.component';
-import { AllFactsComponent } from './facts/all-facts/all-facts.component';
-import { MyFactsComponent } from './facts/my-facts/my-facts.component';
 import { FactComponent } from './facts/fact/fact.component';
+import { FactsListComponent } from './facts/facts-list/facts-list.component';
 
 @NgModule({
   declarations: [
@@ -33,9 +32,8 @@ import { FactComponent } from './facts/fact/fact.component';
     AuthRegisterComponent,
     AuthLoginComponent,
     FactsHeaderComponent,
-    AllFactsComponent,
-    MyFactsComponent,
-    FactComponent
+    FactComponent,
+    FactsListComponent
   ],
   imports: [
     BrowserModule,
