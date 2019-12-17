@@ -49,7 +49,7 @@ export class FactsService {
   // Adds new fact to state and informs listeners
 
   addFact(fact: Fact) {
-    this.apiService.post('/facts',{text: fact.text}).subscribe(
+    this.apiService.post('/facts', {text: fact.text}).subscribe(
       (() => {
         if (this.allFacts) {
           this.getFacts();

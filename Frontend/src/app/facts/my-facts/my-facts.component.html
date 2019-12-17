@@ -7,11 +7,11 @@
       [$item]="item">
     </div>
 
-    <ng-template #prev>
+    <ng-template #prev *ngIf='facts.length'>
       <img src="assets/images/left-arrow.png" id="left">
     </ng-template>
 
-    <ng-template #next>
+    <ng-template #next *ngIf='facts.length'>
       <img src="assets/images/right-arrow.png" id="right">
     </ng-template>
 
