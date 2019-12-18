@@ -28,7 +28,7 @@
 
 - Data Verification Service
 
-# Useage 
+## Useage 
 
 - After setup, user interface is available at: http://localhost:4200
 
@@ -57,7 +57,7 @@
 <img src="https://i.ibb.co/NxpM6M2/newFact3.png" title="Added fact all facts">
 
 
-### Let's get started
+## Let's get started
 
 ### Clone
 
@@ -108,9 +108,9 @@ $ ng serve
 
 > Now a friendly user interface is running on http://localhost:4200
 
-# Documentation 
+## Documentation 
 
-## Modules
+### Modules
 
 - Client Side
 
@@ -124,7 +124,7 @@ $ ng serve
 
 > Node.js - as a backend development environment
 
-## Design 
+### Design 
 
 - UML Diagram
 
