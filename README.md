@@ -28,7 +28,7 @@
 
 # Useage 
 
-> After setup user interface is available at: http://localhost:4200
+- After setup user interface is available at: http://localhost:4200
 
 > Register
 
