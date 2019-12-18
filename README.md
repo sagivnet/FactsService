@@ -2,7 +2,7 @@
 
 - Share Some Facts With The World!
 
-- A Facts Feed Manager End-to-end Application using Anguler & Node.js as development environments
+- A Facts Feed Manager RESTful End-to-end Application using Anguler & Node.js as development environments
 
 ## Features
 
@@ -18,7 +18,9 @@
 
 > Server Side
 
-- Online Remote Database Integration
+- RESTful Api
+
+- Online Remote Database Integration storing facts and users information
 
 - Authentication Service
 
@@ -28,7 +30,7 @@
 
 # Useage 
 
-- After setup user interface is available at: http://localhost:4200
+- After setup, user interface is available at: http://localhost:4200
 
 > Register
 
@@ -71,8 +73,8 @@ $ cd FactsService
 
 > Configurations: You need to have a file named: .env in folder: Backend Contatins:
 
-- DB_URI        =  An Atlas MongoDB connection credentials URI
-- TOKEN_SECRET  =  A random string which is used as a private key for Bycryptjs passwords RSA encryption system 
+- DB_URI        =  <'An Atlas MongoDB connection credentials URI'>
+- TOKEN_SECRET  =  <'A random string which is used as a private key for Bycryptjs passwords RSA encryption system'>
 
 > Backend setup
 
@@ -108,17 +110,23 @@ $ ng serve
 
 ## Documentation 
 
-- An End-to-end project implements a RESTful api following the MEAN scheme pattern 
+- This project implements a RESTful api 
+
+## Modules
+
+- Client Side
+
+- Server Side
 
 > MongoDB - as a database
 
 > Express - as a server manager module
 
-> Angular - as a frontend environment
+> Angular - as a frontend development environment
 
-> Node.js - as a backend environment
+> Node.js - as a backend development environment
 
-## Design And Modules
+## Design 
 
 - UML Diagram
 
