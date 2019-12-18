@@ -14,7 +14,7 @@ body {
   display: flex;
   height: 250px;
   width: 85%;
-  background-color: #c7966e;
+  background-color: #c7966ed8;
   border-radius: 10px;
   box-shadow: -1rem 0 1rem #000;
 /*   margin-left: -50px; */
@@ -39,8 +39,8 @@ body {
 }
 
 .text {
-  color: rgba(255, 255, 255, 0.781);
-  font-weight: 500;
+  color: rgba(255, 255, 255, 0.904);
+  font-weight: 400;
   position: absolute;
   left: 20px;
   top: 40px;
