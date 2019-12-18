@@ -73,8 +73,8 @@ $ cd FactsService
 
 > Configurations: You need to have a file named: .env in folder: Backend Contatins:
 
-- DB_URI        =  <'An Atlas MongoDB connection credentials URI'>
-- TOKEN_SECRET  =  <'A random string which is used as a private key for Bycryptjs passwords RSA encryption system'>
+- DB_URI        =  An Atlas MongoDB connection credentials URI
+- TOKEN_SECRET  =  A random string which is used as a private key for Bycryptjs passwords RSA encryption system
 
 > Backend setup
 
