@@ -50,7 +50,7 @@
 
 <img src="https://i.ibb.co/QHy7kHn/newFact2.png" title="Added fact my facts">
 
-> Fact was added to the global feed as well
+> The fact was added to the global feed as well
 
 <img src="https://i.ibb.co/NxpM6M2/newFact3.png" title="Added fact all facts">
 
