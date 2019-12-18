@@ -1,10 +1,15 @@
+
 <div class="facts">
     <mat-card class='fact'>
-        <p class="text">{{ fact.text }}</p>
-        <p class="text">{{ fact.user.name }}</p>
 
-        <mat-card-actions>
-            <button  *ngIf='!isAllFacts' id="delete" class="btn mtBtn" mat-raised-button color='warn' (click)="onDelete()">DELETE</button>
-          </mat-card-actions>
+      <mat-chip-list *ngIf='isAllFacts'>
+        <mat-chip class="name">{{ fact.user.name }}</mat-chip>
+      </mat-chip-list>
+
+      <p class="text">{{ fact.text }}</p>
+
+      <mat-card-actions>
+        <button  *ngIf='!isAllFacts' id="delete" class="mtBtn" mat-raised-button color='warn' (click)="onDelete()">DELETE</button>
+      </mat-card-actions>
     </mat-card>
 </div>

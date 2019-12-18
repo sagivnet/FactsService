@@ -40,10 +40,10 @@ body {
 
 .text {
   color: white;
-  font-weight: 300;
+  font-weight: 500;
   position: absolute;
   left: 20px;
-  top: 15px;
+  top: 40px;
 }
 
 .mtBtn {
@@ -51,4 +51,16 @@ body {
   border-color: rgb(255, 0, 0);
   /* background-color: white; */
   top: 80%;
+  right: -135px;
 }
+
+.name {
+  color: black;
+  font-weight: 500;
+  background-color: rgb(253, 239, 33);
+  position: relative;
+  /* bottom: 220px; */
+  right: -135px;
+  transition: 0.4s ease-out;
+}
+

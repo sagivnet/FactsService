@@ -1,7 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { FactCreateComponent } from './facts/fact-create/fact-create.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -11,6 +10,8 @@ import {
   MatButtonModule,
   MatToolbarModule,
 } from '@angular/material';
+import {MatChipsModule} from '@angular/material/chips'
+
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -44,6 +45,7 @@ import { FactsListComponent } from './facts/facts-list/facts-list.component';
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
+    MatChipsModule,
     Ng2CarouselamosModule,
     HttpClientModule
   ],
