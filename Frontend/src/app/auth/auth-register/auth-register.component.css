@@ -7,3 +7,8 @@
 .register-full-width {
   width: 100%;
 }
+
+.btn {
+  background-color: rgb(58, 8, 8);
+  color: rgb(143, 143, 143);
+}

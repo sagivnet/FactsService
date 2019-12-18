@@ -14,7 +14,8 @@ body {
   display: flex;
   height: 250px;
   width: 85%;
-  background-color: #c7966ed8;
+  background-color: rgba(59, 19, 19, 0.521);
+
   border-radius: 10px;
   box-shadow: -1rem 0 1rem #000;
 /*   margin-left: -50px; */
@@ -38,29 +39,34 @@ body {
   transition: 0.4s ease-out;
 }
 
-.text {
-  color: rgba(255, 255, 255, 0.904);
-  font-weight: 400;
-  position: absolute;
-  left: 20px;
-  top: 40px;
-}
 
 .mtBtn {
   border: solid 1px;
-  border-color: rgb(255, 0, 0);
-  /* background-color: white; */
+  border-color: rgba(59, 19, 19, 0.5);
+  background-color: rgba(59, 19, 19, 0.5);
+  color: rgba(146, 146, 146, 0.808);
+  font-weight: 450;
   top: 80%;
   right: -135px;
 }
 
 .name {
-  color: rgba(0, 0, 0, 0.808);
-  font-weight: 500;
-  background-color: rgba(192, 192, 192, 0.651);
+  color: rgba(122, 122, 122, 0.808);
+  font-weight: 450;
+  /* background-color: rgba(68, 68, 68, 0.363); */
+  background-color: rgba(0, 0, 0, 0.13);
+  /* background-color: rgba(13, 22, 48, 0.377); */
   position: relative;
   /* bottom: 220px; */
   right: -135px;
   transition: 0.4s ease-out;
 }
 
+
+.text {
+  color: rgba(199, 197, 197, 0.63);
+  font-weight: 650;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+}

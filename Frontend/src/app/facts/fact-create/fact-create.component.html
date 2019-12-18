@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card class='card'>
   <form (submit)='onAddFact(factForm)' #factForm='ngForm'>
       <mat-form-field>
         <input
@@ -12,10 +12,10 @@
           #msgText='ngModel'>
       </mat-form-field>
       <button
-        mat-raised-button
-        color="accent"
+        mat-fab
+        class='btn'
         type='submit'>
-        Post Fact
+        Post
       </button>
   </form>
 </mat-card>
