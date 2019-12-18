@@ -100,6 +100,30 @@ $ ng serve
 
 > After setup, go to: http://localhost:4200
 
+> Register
+
+<img src="https://i.ibb.co/M5PsJvL/register.png" title="Register">
+
+> Login
+
+<img src="https://i.ibb.co/rQH0cSB/login.png" title="Login">
+
+> Home
+
+<img src="https://i.ibb.co/4ghR63R/home.png" title="Home">
+
+> Add a new fact
+
+<img src="https://i.ibb.co/rvsS4qk/newFact.png" title="Add Fact">
+
+> The posted fact has been published, user can also delete it from his personal page
+
+<img src="https://i.ibb.co/QHy7kHn/newFact2.png" title="Added fact my facts">
+
+> Fact was added to the global feed as well
+
+<img src="https://i.ibb.co/NxpM6M2/newFact3.png" title="Added fact all facts">
+
 ## Documentation 
 
 - An End-to-end project implements a RESTful api following the MEAN scheme pattern 
