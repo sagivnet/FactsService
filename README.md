@@ -46,11 +46,11 @@
 
 <img src="https://i.ibb.co/XxbsPXs/newFact.png" title="Add Fact">
 
-> The posted fact has been published, user can also delete it from his personal page
+> The posted fact is published, user can also delete it from his personal page
 
 <img src="https://i.ibb.co/QHy7kHn/newFact2.png" title="Added fact my facts">
 
-> The fact was added to the global feed as well
+> The fact is added to the global feed as well
 
 <img src="https://i.ibb.co/NxpM6M2/newFact3.png" title="Added fact all facts">
 
