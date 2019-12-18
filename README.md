@@ -26,22 +26,33 @@
 
 - Data Verification Service
 
+# Useage 
 
-## Screenshots
+> After setup user interface is available at: http://localhost:4200
+
+> Register
+
+<img src="https://i.ibb.co/M5PsJvL/register.png" title="Register">
+
+> Login
+
+<img src="https://i.ibb.co/rQH0cSB/login.png" title="Login">
 
 > Home
 
-<img src="https://i.ibb.co/tBLkrgN/Home.png" title="Facts">
+<img src="https://i.ibb.co/4ghR63R/home.png" title="Home">
 
-> User's Personal Page
+> Add a new fact
 
-<img src="https://i.ibb.co/1RhVfD7/MyFacts.png" title="MyFacts">
+<img src="https://i.ibb.co/rvsS4qk/newFact.png" title="Add Fact">
 
-> Authentication
+> The posted fact has been published, user can also delete it from his personal page
 
-<img src="https://i.ibb.co/JtZbqZX/Register.png" title="Register">
+<img src="https://i.ibb.co/QHy7kHn/newFact2.png" title="Added fact my facts">
 
-<img src="https://i.ibb.co/QKH6mC9/Loginpng.png" title="Login">
+> Fact was added to the global feed as well
+
+<img src="https://i.ibb.co/NxpM6M2/newFact3.png" title="Added fact all facts">
 
 
 ### Let's get started
@@ -94,35 +105,6 @@ $ ng serve
 ```
 
 > Now a friendly user interface is running on http://localhost:4200
-
----
-# Useage 
-
-> After setup, go to: http://localhost:4200
-
-> Register
-
-<img src="https://i.ibb.co/M5PsJvL/register.png" title="Register">
-
-> Login
-
-<img src="https://i.ibb.co/rQH0cSB/login.png" title="Login">
-
-> Home
-
-<img src="https://i.ibb.co/4ghR63R/home.png" title="Home">
-
-> Add a new fact
-
-<img src="https://i.ibb.co/rvsS4qk/newFact.png" title="Add Fact">
-
-> The posted fact has been published, user can also delete it from his personal page
-
-<img src="https://i.ibb.co/QHy7kHn/newFact2.png" title="Added fact my facts">
-
-> Fact was added to the global feed as well
-
-<img src="https://i.ibb.co/NxpM6M2/newFact3.png" title="Added fact all facts">
 
 ## Documentation 
 
