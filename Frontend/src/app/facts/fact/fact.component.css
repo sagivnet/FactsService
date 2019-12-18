@@ -14,7 +14,7 @@ body {
   display: flex;
   height: 250px;
   width: 85%;
-  background-color: #5bb471;
+  background-color: #c7966e;
   border-radius: 10px;
   box-shadow: -1rem 0 1rem #000;
 /*   margin-left: -50px; */
@@ -39,7 +39,7 @@ body {
 }
 
 .text {
-  color: white;
+  color: rgba(255, 255, 255, 0.781);
   font-weight: 500;
   position: absolute;
   left: 20px;
@@ -55,9 +55,9 @@ body {
 }
 
 .name {
-  color: black;
+  color: rgba(0, 0, 0, 0.808);
   font-weight: 500;
-  background-color: rgb(253, 239, 33);
+  background-color: rgba(192, 192, 192, 0.651);
   position: relative;
   /* bottom: 220px; */
   right: -135px;
