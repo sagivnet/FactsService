@@ -108,9 +108,7 @@ $ ng serve
 
 > Now a friendly user interface is running on http://localhost:4200
 
-## Documentation 
-
-- This project implements a RESTful api 
+# Documentation 
 
 ## Modules
 
