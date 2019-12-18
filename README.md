@@ -44,7 +44,7 @@
 
 > Add a new fact
 
-<img src="https://i.ibb.co/rvsS4qk/newFact.png" title="Add Fact">
+<img src="https://i.ibb.co/XxbsPXs/newFact.png" title="Add Fact">
 
 > The posted fact has been published, user can also delete it from his personal page
 
